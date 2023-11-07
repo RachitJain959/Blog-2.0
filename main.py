@@ -3,7 +3,7 @@ import requests
 import smtplib
 import os
 
-# blog_url = os.environ.get("blog_url")
+blog_url = os.environ.get("blog_url")
 blog_data = requests.get("blog_url").json()
 my_email = os.environ.get("my_email")
 password = os.environ.get("password")
